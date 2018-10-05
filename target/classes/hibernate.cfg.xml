@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>      
+  <session-factory>
+    <!-- Database connection settings -->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/bookstore</property>
+    <property name="connection.username">aurel</property>
+    <property name="connection.password">4e#Traordinari</property>
+    <!-- Show the Hibernate logs -->
+    <property name="show_sql">true</property>
+        
+    <mapping class="db.Book" />
+     
+  </session-factory>
+</hibernate-configuration>
